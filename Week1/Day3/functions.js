@@ -107,3 +107,14 @@ function timesTwoAgain(num) {
 }
 var result = timesTwoAgain(3) + timesTwoAgain(5);
 console.log('result is', result);
+
+
+
+
+function sumNums(num1, num2) {
+    var sum = num1 + num2;
+    console.log('sum is', sum);
+    return sum;
+}
+var result = sumNums(2,3) + sumNums(3,sumNums(2,1)) + sumNums(sumNums(2,1),sumNums(2,3));
+console.log('result is', result);
